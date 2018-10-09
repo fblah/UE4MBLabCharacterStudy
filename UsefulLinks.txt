@@ -1,0 +1,6 @@
+Blender workflow for unreal:
+https://github.com/UnrealPhx/Presentations/tree/master/Presentations/AnimationWorkflowsBlenderUE4
+Copy Shape keys in blender:
+https://blender.stackexchange.com/questions/119836/scripting-transferring-shape-keys-between-different-meshes/119867#119867
+Mirror animations in real time:
+https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1451554-animation-mirroring-system
