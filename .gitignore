@@ -44,6 +44,9 @@
 *.VC.db
 *.VC.opendb
 
+#Blends
+*.blend
+
 # Precompiled Assets
 SourceArt/**/*.png
 SourceArt/**/*.tga
