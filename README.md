@@ -10,6 +10,9 @@ All assets used in this project are free to use. Please read individual licenses
 Unreal Engine:
 https://www.unrealengine.com/
 
+Blend project file:
+http://www.mediafire.com/file/23c8xlzoowcdq3q/MBLabFemale.blend/file
+
 Hair Material Reference:
 https://forums.unrealengine.com/community/community-content-tools-and-tutorials/34538-free-hair-material
 
