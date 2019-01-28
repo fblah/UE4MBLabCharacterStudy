@@ -30,4 +30,7 @@ The substances used are obtained from https://share.allegorithmic.com
 I searched for this:
 https://share.allegorithmic.com/libraries?utf8=✓&q%5Bname_or_tags_name_or_description_cont%5D=grunge&button=
 
+Manuel Bastioni Lab is now being maintained here:
+https://github.com/animate1978/MB-Lab
+
 I will add more documentation soon. In the meanwhile you can play around with the project.
