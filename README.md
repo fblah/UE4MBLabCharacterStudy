@@ -5,6 +5,10 @@
 
 In this project I wish to share some useful tips and tricks I learnt while creating ManuelBastioni Lab Characters for UnrealEngine
 
+You will learn how to:
+Use MB Lab characters made with Blender in UE4
+Use BPs to automate foot steps
+
 All assets used in this project are free to use. Please read individual licenses of assets for furthur information.
 
 Unreal Engine:
@@ -23,7 +27,7 @@ Shoes/Shirt/hair/skirt
 Cadnav.com Free license (Both personal and commercial)
 Personally I would avoid using these assets but I have included them only for the purpose of study.
 
-Other media/texture/material assets created by me (Ajit D'monte) are released under CC-BY licence CC-BY 4.0.
+Other media/texture/material/blueprint assets created by me (Ajit D'Monte) are released under CC-BY licence CC-BY 4.0.
 https://creativecommons.org/licenses/by/4.0/
 
 The substances used are obtained from https://share.allegorithmic.com 
@@ -34,3 +38,5 @@ Manuel Bastioni Lab is now being maintained here:
 https://github.com/animate1978/MB-Lab
 
 I will add more documentation soon. In the meanwhile you can play around with the project.
+
+Check out my Gumroad page if you would like to help fund the updates I want to add to this project!
