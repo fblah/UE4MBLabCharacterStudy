@@ -1,0 +1,4 @@
+[submodule "Plugins/AnimNode"]
+	path = Plugins/AnimNode
+	url = https://github.com/fblah/AnimNode.git
+	branch = master
