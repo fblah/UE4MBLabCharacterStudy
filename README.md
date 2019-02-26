@@ -5,9 +5,11 @@
 
 In this project I wish to share some useful tips and tricks I learnt while creating ManuelBastioni Lab Characters for UnrealEngine
 
-You will learn how to:
-Use MB Lab characters made with Blender in UE4
-Use BPs to automate foot steps
+##
+
+### You will learn how to:
+- Use MB Lab characters made with Blender in UE4
+- Use BPs to automate foot steps
 
 All assets used in this project are free to use. Please read individual licenses of assets for furthur information.
 
