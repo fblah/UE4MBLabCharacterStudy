@@ -14,6 +14,7 @@ In this project I wish to share some useful tips and tricks I learnt while creat
 - Mirror animations
 - Use hand poses for characters
 - Perform IK for feet and seated characters
+- Head and eye tracking
 
 All assets used in this project are free to use. Please read individual licenses of assets for furthur information.
 
