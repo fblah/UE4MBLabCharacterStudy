@@ -10,6 +10,11 @@ In this project I wish to share some useful tips and tricks I learnt while creat
 ### You will learn how to:
 - Use MB Lab characters made with Blender in UE4
 - Use BPs to automate foot steps
+- Perform Lip Sync with characters and audio
+- Mirror animations
+- Use hand poses for characters
+- Perform IK for feet and seated characters
+- Head and eye tracking
 
 All assets used in this project are free to use. Please read individual licenses of assets for furthur information.
 
