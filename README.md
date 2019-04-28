@@ -36,7 +36,7 @@ Shoes/Shirt/hair/skirt
 Cadnav.com Free license (Both personal and commercial)
 Personally I would avoid using these assets but I have included them only for the purpose of study.
 
-Other media/texture/material/blueprint assets created by me (Ajit D'Monte) are released under CC-BY licence CC-BY 4.0.
+Other media/texture/material/blueprint/code assets created by me (Ajit D'Monte) are released under CC-BY licence CC-BY 4.0.
 https://creativecommons.org/licenses/by/4.0/
 
 The substances used are obtained from https://share.allegorithmic.com 

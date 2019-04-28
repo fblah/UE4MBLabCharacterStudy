@@ -5,6 +5,8 @@
 #include "Runtime/Engine/Classes/Animation/SkeletalMeshActor.h"
 #include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
 
+#include "AssetToolsModule.h"
+
 TArray<FString> UfBlahBlueprintFunctionLibrary::GetCharacterMorphs(USkeletalMeshComponent* mesh) {
 	TArray<FString> outputArray;
 	USkeletalMesh * skelMesh = mesh->SkeletalMesh;
@@ -142,4 +144,19 @@ void UfBlahBlueprintFunctionLibrary::String__ExplodeString(TArray<FString>& Outp
 		Section.Empty();
 		Extra.Empty();
 	}
+}
+
+void UfBlahBlueprintFunctionLibrary::ExportAssets(TArray<UObject*> ObjectsToExport, const FString ExportPath)
+{
+	FAssetToolsModule& AssetToolsModule = FModuleManager::GetModuleChecked<FAssetToolsModule>("AssetTools");
+
+	//AssetToolsModule.Get().ExportAssetsWithDialog(ObjectsToExport, true);
+	AssetToolsModule.Get().ExportAssets(ObjectsToExport, ExportPath);
+
+}
+
+bool UfBlahBlueprintFunctionLibrary::IsInEditor(AActor* Actor)
+{
+	return Actor->GetWorld()->WorldType == EWorldType::Type::Editor;
+
 }

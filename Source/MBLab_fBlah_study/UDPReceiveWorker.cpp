@@ -5,10 +5,10 @@
 UDPReceiveWorker* UDPReceiveWorker::Runnable = NULL;
 
 UDPReceiveWorker::UDPReceiveWorker(TArray<uint8>& ReceivedData, FSocket* InSocket, FTimespan& InWaitTime)
-	: Socket(InSocket)
-	, StopTaskCounter(0)
-	, WaitTime(InWaitTime)
+	: StopTaskCounter(0)
+	, Socket(InSocket)	
 	, Stopping(false)
+	, WaitTime(InWaitTime)
 {
 
 	const bool bAutoDeleteSelf = false;

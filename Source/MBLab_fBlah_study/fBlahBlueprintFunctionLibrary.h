@@ -38,5 +38,10 @@ public:
 	*/
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "Victory BP Library|String", Keywords = "split explode string"), Category = String)
 		static void String__ExplodeString(TArray<FString>& OutputStrings, FString InputString, FString Separator = ",", int32 limit = 0, bool bTrimElements = false);
+	
+	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Export Assets", Keywords = "Export asset objects"))
+		static void ExportAssets(TArray<UObject*> ObjectsToExport, const FString ExportPath);
 
+	UFUNCTION(BlueprintPure, Category = "fBlah's Blueprints", meta = (DisplayName = "In Editor?", Keywords = "Is in editor?"))
+		static bool IsInEditor(AActor *Actor);
 };
