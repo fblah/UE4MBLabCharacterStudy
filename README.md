@@ -22,15 +22,20 @@ the challenges associated with character development, so that they can get into 
 
 ## Licenses
 All assets available in this project are free to use. Please read individual licenses of assets for furthur information.
-Hair Material Reference:
-https://forums.unrealengine.com/community/community-content-tools-and-tutorials/34538-free-hair-material
+
+Hair Material Reference: https://forums.unrealengine.com/community/community-content-tools-and-tutorials/34538-free-hair-material
+
 Character and its textures created using ManuelBastioniLab - http://manuelbastioni.com by Manuel Bastioni is licensed under CC-BY 4.0
+
 Shoes/Shirt/Hair/Skirt - Cadnav.com Free license (Personal and Commercial)
+
 All media/texture/material/blueprint/code assets created by AUTHORS are released under CC-BY licence CC-BY 4.0.
 https://creativecommons.org/licenses/by/4.0/
 ## Links
 The substances used are obtained from https://share.allegorithmic.com 
+
 Manuel Bastioni Lab is now being maintained here: https://github.com/animate1978/MB-Lab
+
 Blend project file:http://www.mediafire.com/file/23c8xlzoowcdq3q/MBLabFemale.blend/file
 ## Community
 Please join us on Discord to offer contributions, feedback, requests and suggestions. Also consider funding the project to speed up development.
