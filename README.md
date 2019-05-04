@@ -34,7 +34,7 @@ https://creativecommons.org/licenses/by/4.0/
 ## Links
 The substances used are obtained from https://share.allegorithmic.com 
 
-Manuel Bastioni Lab is now being maintained here: https://github.com/animate1978/MB-Lab
+Please use the official copy of ManuelBastioni Lab included in this repository with Blender 2.79 until licensing issues are sorted out in currently maintained version over here: https://github.com/animate1978/MB-Lab
 
 Blend project file:http://www.mediafire.com/file/23c8xlzoowcdq3q/MBLabFemale.blend/file
 ## Community
