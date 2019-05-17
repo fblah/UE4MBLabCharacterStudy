@@ -1,6 +1,17 @@
 Blender workflow for unreal:
 https://github.com/UnrealPhx/Presentations/tree/master/Presentations/AnimationWorkflowsBlenderUE4
+
 Copy Shape keys in blender:
 https://blender.stackexchange.com/questions/119836/scripting-transferring-shape-keys-between-different-meshes/119867#119867
+https://github.com/fblah/ShapeKeyTransferBlender (has separate branches for Blender 2.80 and 2.79)
+
 Mirror animations in real time:
 https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1451554-animation-mirroring-system
+https://github.com/fblah/AnimNode
+https://github.com/fblah/AnimNodeProject
+    
+Make AI that can jump in unreal engine(without navlinks):
+https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1452736-simple-jumping-ai
+
+fBlah's Tools for Blender
+https://github.com/fblah/fBlahTools
