@@ -4,20 +4,49 @@ using UnrealBuildTool;
 
 public class MBLab_fBlah_study : ModuleRules
 {
-	public MBLab_fBlah_study(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Networking", "Sockets" });
+    public MBLab_fBlah_study(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+        PublicIncludePaths.AddRange(
+           new string[]
+           {
+               "Runtime/MovieSceneTracks/Public/Tracks/",
+                "Runtime/MovieSceneTracks/Public/Sections/",
+                "Runtime/MovieScene/Public/Sections/",
+           });
+        PublicDependencyModuleNames.AddRange(
+            new string[]
+            {
+                "Core",
+                "CoreUObject",
+                "Engine",
+                "InputCore",
+                "Networking",
+                "Sockets",
+                "LevelSequence",
+            }
+            );
 
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-	}
+        PrivateDependencyModuleNames.AddRange(new string[] {
+            "MovieScene",
+            "MovieSceneTracks",
+        }
+        );
+        if (Target.Type == TargetType.Editor)
+        {
+            PublicDependencyModuleNames.AddRange(
+            new string[]
+            {
+                "Sequencer",
+            }
+            );
+            PrivateDependencyModuleNames.AddRange(
+            new string[]
+            {
+                "UnrealEd",
+            }
+            );
+        }
+    }
 }

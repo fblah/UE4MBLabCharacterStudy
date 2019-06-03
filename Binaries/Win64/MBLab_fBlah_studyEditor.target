@@ -9,8 +9,8 @@
 	{
 		"MajorVersion": 4,
 		"MinorVersion": 22,
-		"PatchVersion": 1,
-		"Changelist": 6063286,
+		"PatchVersion": 2,
+		"Changelist": 6574378,
 		"CompatibleChangelist": 5660361,
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 1,
@@ -3712,7 +3712,7 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/Binaries/Win64/UE4Editor.version",
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor.version",
 			"Type": "RequiredResource"
 		},
 		{
