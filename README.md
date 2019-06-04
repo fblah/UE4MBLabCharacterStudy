@@ -13,9 +13,12 @@ Manuel Bastioni Lab is an addon for Blender which allows you to create realistic
 This projects provides a clear and simple FOSS workflow to import MB-Lab characters into Unreal Engine for use with your games and movies. At the moment this project contains several modules to aid with bringing your characters to life by providing the following features and many more to come:
 - Blueprints to automate foot steps events
 - Lip Sync for audio (Supports both English and Phonetic lip sync for other languages, alternatively Papagayo support is available for manuel lip sync)
-- Mirror character animations in Anim Graph of Anim Blueprint
+- Mirror character animations in Anim Graph of Anim Blueprint with root motion mirroring support
 - IK for feet and seated characters
 - Head and Eye tracking of objects by the character
+- Support to edit morph target keyframes in sequencer in editor
+- Highly customisable skin material
+- And many more to come!
 
 The modules provided in this project can also be used with other characters created using other tools but will need changes to support them. They are intended to aide creators who wish to make a game or movie in Unreal Engine overcome 
 the challenges associated with character development, so that they can get into gameplay or story telling aspects sooner.
@@ -38,4 +41,4 @@ Please use the official copy of ManuelBastioni Lab included in this repository w
 
 Blend project file:http://www.mediafire.com/file/23c8xlzoowcdq3q/MBLabFemale.blend/file
 ## Community
-Please join us on Discord to offer contributions, feedback, requests and suggestions. Also consider funding the project to speed up development.
+Please join us on Discord to offer contributions, feedback, requests and suggestions. Also consider funding the project to speed up development. Don't forget to subscribe to our youtube channel to keep updated with our upcoming tutorials.
