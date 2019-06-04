@@ -5,6 +5,8 @@
 <span class="badge-discord"><a href="https://discord.gg/CmgdEvw" title="Join on discord"><img src="https://img.shields.io/badge/Discord-Join-768ADC.svg?logo=discord&longCache=true&style=popout-square" alt="Discord server button" /></a></span>
 <span class="badge-youtube"><a href="https://www.youtube.com/playlist?list=PLLvF6v7RGOO-vhMVYnNXfK2rdCiuRx3E-" title="Watch Tutorial Series"><img src="https://img.shields.io/badge/Tutorial-Series-F40000.svg?logo=youtube&longCache=true&style=popout-square" alt="Youtube Tutorial Series" /></a></span>
 
+[![Open Source Character Workflow](https://img.youtube.com/vi/ymRISBoV2Zg/0.jpg)](https://www.youtube.com/watch?v=ymRISBoV2Zg)
+
 This project is currently built for UE 4.22
 
 Manuel Bastioni Lab is an addon for Blender which allows you to create realistic as well as anime humanoid characters which are rigged and have blend shapes (Shape Keys) for the face and body. 
