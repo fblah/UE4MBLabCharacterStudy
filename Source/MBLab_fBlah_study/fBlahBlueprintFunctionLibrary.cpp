@@ -4,7 +4,7 @@
 #include "Runtime/Engine/Classes/Engine/SkeletalMesh.h"
 #include "Runtime/Engine/Classes/Animation/SkeletalMeshActor.h"
 #include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
-
+#include "Misc/FileHelper.h"
 #include "AssetToolsModule.h"
 
 DEFINE_LOG_CATEGORY(LogfBlah);
@@ -326,3 +326,12 @@ bool UfBlahBlueprintFunctionLibrary::FindBinding(ULevelSequence *LevelSequence, 
 	return false;
 }
 
+bool UfBlahBlueprintFunctionLibrary::FileSaveString(FString SaveTextB, FString FileNameB)
+{
+	return FFileHelper::SaveStringToFile(SaveTextB, *(FileNameB));
+}
+
+bool UfBlahBlueprintFunctionLibrary::FileLoadString(FString FileNameA, FString& SaveTextA)
+{
+	return FFileHelper::LoadFileToString(SaveTextA, *(FileNameA));
+}

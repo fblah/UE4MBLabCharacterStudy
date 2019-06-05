@@ -60,6 +60,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Get String Keys from Sequencer", Keywords = "Get String keys from sequencer"))
 		static bool GetStringKeys(ULevelSequence* LevelSequence, UObject* Object, TArray<FString> & Values, TArray<float> &Times, const FName Name);
 	
+	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Save String to File", Keywords = "Save String to File"))
+		static bool FileSaveString(FString SaveTextB, FString FileNameB);
+
+	UFUNCTION(BlueprintPure, Category = "fBlah's Blueprints", meta = (DisplayName = "Load String from File", Keywords = "Load String from File"))
+		static bool FileLoadString(FString FileNameA, FString& SaveTextA);
+
 private:
 	static bool FindBinding(ULevelSequence *LevelSequence, UObject *Object, FGuid & Guid);
 	
