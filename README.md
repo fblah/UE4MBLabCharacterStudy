@@ -20,6 +20,9 @@ This projects provides a clear and simple FOSS workflow to import MB-Lab charact
 - Head and Eye tracking of objects by the character
 - Support to edit morph target keyframes in sequencer in editor
 - Highly customisable skin material
+- Added sequencer support to edit lip sync
+- Retarget Poses ready for importing animations from Mixamo and UE4 Mannequin (also can be used to retarget animations to these skeletons)
+- Easy montage management
 - And many more to come!
 
 The modules provided in this project can also be used with other characters created using other tools but will need changes to support them. They are intended to aide creators who wish to make a game or movie in Unreal Engine overcome 
