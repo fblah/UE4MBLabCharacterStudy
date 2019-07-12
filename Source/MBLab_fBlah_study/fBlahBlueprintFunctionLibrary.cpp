@@ -5,7 +5,10 @@
 #include "Runtime/Engine/Classes/Animation/SkeletalMeshActor.h"
 #include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
 #include "Misc/FileHelper.h"
+
+#if WITH_EDITOR	
 #include "AssetToolsModule.h"
+#endif 	
 
 DEFINE_LOG_CATEGORY(LogfBlah);
 
@@ -75,11 +78,12 @@ void UfBlahBlueprintFunctionLibrary::UpdateMorphTarget(USkeletalMeshComponent* S
 
 void UfBlahBlueprintFunctionLibrary::ExportAssets(TArray<UObject*> ObjectsToExport, const FString ExportPath)
 {
+#if WITH_EDITOR	
 	FAssetToolsModule& AssetToolsModule = FModuleManager::GetModuleChecked<FAssetToolsModule>("AssetTools");
 
 	//AssetToolsModule.Get().ExportAssetsWithDialog(ObjectsToExport, true);
 	AssetToolsModule.Get().ExportAssets(ObjectsToExport, ExportPath);
-
+#endif
 }
 
 bool UfBlahBlueprintFunctionLibrary::IsInEditor(AActor* Actor)

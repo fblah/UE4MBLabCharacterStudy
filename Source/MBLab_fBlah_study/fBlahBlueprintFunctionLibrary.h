@@ -4,7 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+
+#if WITH_EDITOR	
 #include "Editor/UnrealEd/Public/Toolkits/AssetEditorManager.h"
+#include "Editor/MovieSceneTools/Public/KeyframeTrackEditor.h"
+#endif
+
 #include "Runtime/Engine/Classes/Components/ActorComponent.h"
 #include "Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h"
 
@@ -13,7 +18,7 @@
 
 #include "MovieSceneStringSection.h"
 #include "MovieSceneStringTrack.h"
-#include "Editor/MovieSceneTools/Public/KeyframeTrackEditor.h"
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogfBlah, Log, All);
 
