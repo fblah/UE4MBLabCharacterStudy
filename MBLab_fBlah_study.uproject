@@ -23,6 +23,10 @@
 			"Name": "AllrightRig",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/6e6ba21873114a77af5e44981a4c3588"
+		},
+		{
+			"Name": "SoundVisualizations",
+			"Enabled": true
 		}
 	]
 }
