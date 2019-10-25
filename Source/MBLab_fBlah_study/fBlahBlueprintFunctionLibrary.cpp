@@ -260,6 +260,44 @@ bool UfBlahBlueprintFunctionLibrary::SetStringKey(ULevelSequence* LevelSequence,
 	return false;
 }
 
+bool UfBlahBlueprintFunctionLibrary::SetFloatKey(ULevelSequence* LevelSequence, UObject* Object, float Value, float Time, const FName Name = FName("FaceOperationString"))
+{
+#if WITH_EDITOR
+	if (LevelSequence && Object)
+	{
+		FGuid Guid;
+		if (FindBinding(LevelSequence, Object, Guid))
+		{
+			UMovieSceneFloatTrack* MovieSceneTrack = LevelSequence->MovieScene->FindTrack<UMovieSceneFloatTrack>(Guid, Name);
+
+			if (MovieSceneTrack)
+			{
+				TArray <UMovieSceneSection*> MovieSceneSections = MovieSceneTrack->GetAllSections();
+				if (MovieSceneSections.Num())
+				{
+					UMovieSceneFloatSection * FloatSection = nullptr;
+					FloatSection = CastChecked<UMovieSceneFloatSection>(MovieSceneSections[0]);
+					if (FloatSection)
+					{
+						if (FloatSection->TryModify(true))
+						{
+							TArrayView <FMovieSceneFloatChannel*> Channels = FloatSection->GetChannelProxy().GetChannels<FMovieSceneFloatChannel>();
+							FFrameNumber Frame;
+							Frame.Value = Time * 1000;
+							Frame++;
+							Channels[0]->GetData().UpdateOrAddKey(Frame, FMovieSceneFloatValue(Value));
+						}
+						return true;
+					}
+				}
+			}
+		}
+	}
+#endif	
+	return false;
+}
+
+
 bool UfBlahBlueprintFunctionLibrary::GetStringKeys(ULevelSequence* LevelSequence, UObject* Object, TArray<FString> & Values, TArray<float> &Times, const FName Name = FName("FaceOperationString"))
 {
 #if WITH_EDITOR	

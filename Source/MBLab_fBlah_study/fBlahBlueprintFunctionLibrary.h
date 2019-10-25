@@ -18,6 +18,8 @@
 
 #include "MovieSceneStringSection.h"
 #include "MovieSceneStringTrack.h"
+#include "MovieSceneFloatSection.h"
+#include "MovieSceneFloatTrack.h"
 
 
 DECLARE_LOG_CATEGORY_EXTERN(LogfBlah, Log, All);
@@ -65,6 +67,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Get String Keys from Sequencer", Keywords = "Get String keys from sequencer"))
 		static bool GetStringKeys(ULevelSequence* LevelSequence, UObject* Object, TArray<FString> & Values, TArray<float> &Times, const FName Name);
 	
+
+	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Set Float Key in Sequencer", Keywords = "Set Float key in sequencer"))
+		static bool SetFloatKey(ULevelSequence* LevelSequence, UObject* Object, float value, float Time, const FName Name);
+
 	UFUNCTION(BlueprintCallable, Category = "fBlah's Blueprints", meta = (DisplayName = "Save String to File", Keywords = "Save String to File"))
 		static bool FileSaveString(FString SaveTextB, FString FileNameB);
 
@@ -73,6 +79,7 @@ public:
 
 private:
 	static bool FindBinding(ULevelSequence *LevelSequence, UObject *Object, FGuid & Guid);
+		
 	
 	template <typename T> static bool isConst(T& x)
 	{
