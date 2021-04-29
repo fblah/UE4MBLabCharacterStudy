@@ -95,7 +95,7 @@ bool UfBlahBlueprintFunctionLibrary::IsInEditor(AActor* Actor)
 ULevelSequence * UfBlahBlueprintFunctionLibrary::GetCurrentSequence()
 {
 #if WITH_EDITOR
-	TArray <UObject*> Objects = FAssetEditorManager::Get().GetAllEditedAssets();
+	TArray <UObject*> Objects = GEditor->GetEditorSubsystem<UAssetEditorSubsystem>()->GetAllEditedAssets();
 	for (UObject *Obj : Objects)
 	{
 		ULevelSequence * CurrentSequence = Cast<ULevelSequence>(Obj);
