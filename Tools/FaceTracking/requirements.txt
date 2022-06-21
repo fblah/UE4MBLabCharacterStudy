@@ -2,6 +2,6 @@ dlib==19.16.0
 imutils==0.5.1
 opencv_python==3.4.3.18
 bitarray==0.8.1
-numpy==1.14.3
+numpy==1.22.0
 PyDispatcher==2.0.5
 redis==2.10.6
